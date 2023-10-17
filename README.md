@@ -25,7 +25,7 @@ The SEPTA Data Pipeline from REST to Tableau project leverages a range of techno
 
 #### Transform:
 - **Pandas DataFrame Operations**: Pandas is used extensively for data transformation. It provides powerful tools for cleaning, reshaping, and aggregating the extracted data, ensuring that it's prepared for analysis and visualization.
-- ** Python DateTime Library**: The Python DateTime library is used for many of the time-centric transformations. This is vital for future aggregation and analytics in Tableau.
+- **Python DateTime Library**: The Python DateTime library is used for many of the time-centric transformations. This is vital for future aggregation and analytics in Tableau.
 
 #### Load:
 - **Boto3**: Boto3, the Amazon Web Services (AWS) SDK for Python, is employed for interacting with AWS services, including S3. It is used to store the transformed data into an S3 bucket, making it available for further processing and integration with Tableau.
