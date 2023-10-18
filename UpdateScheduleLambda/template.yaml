@@ -1,12 +1,11 @@
 Resources:
-  MyLambdaFunction:
+  UpdateStatusFunction:
     Type: 'AWS::Serverless::Function'
     Properties:
-      FunctionName: UpdateStatusFunction
       Handler: update_lambda.lambda_handler
       Runtime: python3.9
-      CodeUri: ./
-      Description: My Python Lambda Function
+      CodeUri: UpdateScheduleLambda/
+      Description: Batch update Train Status Function
       MemorySize: 128
       Timeout: 3
       Role: !GetAtt SEPTAExecutionRole.Arn
