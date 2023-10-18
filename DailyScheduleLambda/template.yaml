@@ -1,12 +1,11 @@
 Resources:
-  MyLambdaFunction:
+  GetDailyScheduleFunction:
     Type: 'AWS::Serverless::Function'
     Properties:
-      FunctionName: GetDailyScheduleFunction
       Handler: daily_lambda.lambda_handler
       Runtime: python3.9
-      CodeUri: ./
-      Description: My Python Lambda Function
+      CodeUri: DailyScheduleLambda/
+      Description: Get Daily Train schedule Function
       MemorySize: 128
       Timeout: 3
       Role: !GetAtt SEPTAExecutionRole.Arn
